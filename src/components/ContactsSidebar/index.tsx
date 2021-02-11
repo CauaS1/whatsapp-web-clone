@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 
 import { Container, SearchInput, Wrapper } from './styles';
 
@@ -20,8 +19,6 @@ const ContactsSidebar: React.FC = () => {
 
   return (
     <Container>
-      <Header />
-
       <Wrapper>
         <SearchInput placeholder="Search or start a new chat" />
 

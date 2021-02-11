@@ -13,12 +13,15 @@ export const Container = styled.div`
 
 export const SearchInput = styled.input`
   width: 100%;
-  padding: 10px 5px;
+  padding: 18px 5px;
   margin: 10px 0;
+  background-color: #f5f5f5;
 
-  border: 1px solid #9ba9ff;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
+  transition: all .3s linear;
+  border: 0;
+  box-shadow: 0px 1px 10px 1px #cacace63;
 
 `;
 
@@ -33,7 +36,7 @@ export const Wrapper = styled.div`
   padding: 0px 10px;
 
   > .contact-row + .contact-row {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   > .contact-row {
@@ -48,9 +51,11 @@ export const Wrapper = styled.div`
     padding: 0 8px;
     transition: .3s;
     cursor: pointer;
+    box-shadow: 0px 1px 10px 1px #cacace63;
+
 
     &:hover {
-      background-color: #9ba9ff22;
+      background-color: #21c06322;
     }
 
     > img {

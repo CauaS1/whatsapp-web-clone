@@ -6,6 +6,7 @@ const EmptyState: React.FC = () => {
   return (
     <Container>
       <div className="container">
+        <img src="" alt=""/>
         <h2>Keep your phone connected</h2>
         <p>WhatsApp connect to your phone so sync messages. To reduce data <br />
       usage, connect your phone to to Wi-Fi

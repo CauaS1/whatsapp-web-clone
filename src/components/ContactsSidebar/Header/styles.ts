@@ -1,15 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
+import { FaCommentAlt, FaCircleNotch, FaEllipsisV } from 'react-icons/fa';
 
 export const Container = styled.header`
-    > header {
+  > header {
     width: 100%;
-    padding: 10px 12px;;
-    background-color: #121212;
+    padding: 15px 12px;
+    background-color: #4361ee;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-bottom-right-radius: 50px;
 
     > img {
       width: 35px;
@@ -22,7 +25,8 @@ export const Container = styled.header`
       flex-direction: row;
     }
 
-    > nav button + button { //A partir do segundo botao, dê 10 de margin
+    > nav button + button {
+      //A partir do segundo botao, dê 10 de margin
       margin-left: 10px;
     }
 
@@ -38,8 +42,26 @@ export const Container = styled.header`
       align-items: center;
       justify-content: center;
     }
-    }
-
-   
   }
+`;
+
+export const MessageIcon = styled(FaCommentAlt)`
+  width: 18.5px;
+  height: 18.5px;
+
+  color: #fff;
+`;
+
+export const StatusIcon = styled(FaCircleNotch)`
+  width: 18.5px;
+  height: 18.5px;
+
+  color: #fff;
+`;
+
+export const SettingsIcon = styled(FaEllipsisV)`
+  width: 18.5px;
+  height: 18.5px;
+
+  color: #fff;
 `;

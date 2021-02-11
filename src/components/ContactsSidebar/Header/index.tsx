@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { FaCommentAlt, FaCircleNotch, FaEllipsisV } from 'react-icons/fa';
-
-import { Container } from './styles';
+import { Container, MessageIcon, StatusIcon, SettingsIcon } from './styles';
 
 const Header: React.FC = () => {
   return (
@@ -13,15 +11,15 @@ const Header: React.FC = () => {
         />
         <nav>
           <button>
-            <FaCircleNotch color="#808080" size={18} />
+            <StatusIcon />
           </button>
 
           <button>
-            <FaCommentAlt color="#808080" size={18} />
+            <MessageIcon />
           </button>
 
           <button>
-            <FaEllipsisV color="#808080" size={18} />
+            <SettingsIcon />
           </button>
         </nav>
       </header>

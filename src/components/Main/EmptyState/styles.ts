@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-
   width: 100%;
   height: 100%;
 
@@ -24,6 +22,7 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 50%;
-  height: 50%;
+  width: 42%;
+  height: 42%;
+  margin-bottom: 15px;
 `;

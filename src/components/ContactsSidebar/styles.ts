@@ -7,21 +7,25 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background-color: #f1f1f5;
 
 `;
 
 export const SearchInput = styled.input`
   width: 100%;
-  padding: 18px 5px;
+  padding: 18px 10px;
   margin: 10px 0;
-  background-color: #f5f5f5;
+  background-color: #f1f1f5;
 
   border-radius: 10px;
   outline: none;
   transition: all .3s linear;
   border: 0;
   box-shadow: 0px 1px 10px 1px #cacace63;
+
+  &:focus {
+    background-color: #21c06322;
+  }
 
 `;
 

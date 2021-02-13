@@ -59,7 +59,7 @@ export const Wrapper = styled.div`
 
 
     &:hover {
-      background-color: #21c06322;
+      background-color: #cacace63;
     }
 
     > img {
@@ -67,6 +67,7 @@ export const Wrapper = styled.div`
       height: 40px;
       border-radius: 50%;
       object-fit: cover;
+
     }
 
     .column {

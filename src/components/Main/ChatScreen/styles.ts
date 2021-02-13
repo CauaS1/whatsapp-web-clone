@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-import { FaSmileWink } from 'react-icons/fa';
-import { MdAttachFile } from 'react-icons/md';
+import { FaSmileWink } from "react-icons/fa";
+import { MdAttachFile } from "react-icons/md";
 
 export const Container = styled.div`
   width: 100%;
@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const Header = styled.header`
@@ -16,7 +17,6 @@ export const Header = styled.header`
   height: 60px;
   padding: 12px;
   background-color: #f1f1f5;
-  box-shadow: 15px 2px 10px 1px #cacace63;
 
   display: flex;
   align-items: center;
@@ -47,12 +47,20 @@ export const Header = styled.header`
 `;
 
 export const Content = styled.div`
-  /* width: 100%;
-   height: 100%; */
-  padding: 20px; 
-  display: flex;
-  flex: 1;
+  display: grid;
+  place-items: center;
+
+  padding: 20px;
   background: #fff;
+
+  > img {
+    width: 75%;
+    height: 75%;
+  }
+
+  > h2 {
+    color: #cacace;
+  } 
 `;
 
 export const InputContainer = styled.div`
@@ -61,7 +69,6 @@ export const InputContainer = styled.div`
   padding: 10px;
 
   background-color: #f1f1f5;
-  /* box-shadow: 15px 2px 10px 1px #cacace63; */
   display: flex;
   align-items: center;
 
@@ -75,6 +82,12 @@ export const InputContainer = styled.div`
     background: none;
     border: 0;
     cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 80%;
+    }
   }
 `;
 
@@ -98,10 +111,9 @@ const generalIconCSS = css`
 `;
 
 export const Emoji = styled(FaSmileWink)`
- ${generalIconCSS} 
+  ${generalIconCSS}
 `;
 
 export const Attach = styled(MdAttachFile)`
   ${generalIconCSS}
 `;
-

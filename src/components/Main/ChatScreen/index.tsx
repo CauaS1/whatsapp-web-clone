@@ -1,20 +1,24 @@
 import React from 'react';
-
 import { Container, Header, Content, InputContainer, Input, Emoji, Attach } from './styles';
+
+import Zeke from '../../../images/zeke.png';
+import Texting from '../../../images/text.svg';
 
 const ChatScreen: React.FC = () => {
   return (
     <Container>
       <Header>
-        <img src="https://www.wallpapertip.com/wmimgs/32-328967_895706-title-imagine-cs-imagens-cs-go-4k.png" alt=""/>
+        <img src={Zeke} alt="Avatar"/>
         <div className="column">
-          <h2>MaNos'S FaCas</h2>
-          <p>CauaS1, Gabriel, Andrea, Fernanda, Anne, Mark</p>
+          <h2>Zeke</h2>
+          {/* <p>CauaS1, Gabriel, Andrea, Fernanda, Anne, Mark</p> */}
         </div>
       </Header>
 
       <Content>
-        <h1>Opa</h1>
+        <img src={Texting} alt="Texting"/>
+
+        <h2>Send your first message</h2>
       </Content>
 
       <InputContainer>

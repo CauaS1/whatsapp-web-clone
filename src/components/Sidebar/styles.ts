@@ -17,8 +17,13 @@ export const Container = styled.div`
     width: 35px;
     height: 35px;
     border-radius: 50%;
-
     cursor: pointer;
+
+    transition: .3s;
+
+    &:hover {
+      border-radius: 25%;
+    }
   }
 
   > nav {

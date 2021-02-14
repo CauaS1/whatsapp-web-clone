@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Rubik from '../fonts/Rubik-Light.ttf';
+import Rubik from '../fonts/Rubik.ttf';
 
 export default createGlobalStyle`
   *{
@@ -9,14 +9,13 @@ export default createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Rubik';
-    src: local('Rubik'), local('Rubik'),
-    url(${Rubik}) format('ttf');
-    font-weight: 300;
+    font-family: Rubik;
     font-style: normal;
+    font-weight: 400;
+    src: url(${Rubik});
   }
 
   html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Rubik, sans-serif;
   }
 `;

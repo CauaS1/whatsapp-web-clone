@@ -17,6 +17,11 @@ export const Container = styled.div`
 
     > p, h2 {
       text-align: center;
+      color: #cacace;
+    }
+
+    > h2 {
+      color: #333;
     }
   }
 `;

@@ -17,20 +17,20 @@ interface Photo {
   photos: Array<PhotoArray>;
 }
 
-
-const ContactsSidebar: React.FC<ChatProps> = ({ isChatOpen }) => {
+const ContactsSidebar: React.FC = () => {
   const [profilePhotos, setProfilePhotos] = useState<Photo>();
 
+  async function getPhotos() {
+    const key = '563492ad6f91700001000001043e088e51e94c4898dad43bd37e16a6';
+    const response = await api.get<Photo>('https://api.pexels.com/v1/search?query=profile&size=medium&per_page=5', {
+      headers: {
+        Authorization: key
+      }
+    });
+    setProfilePhotos(response.data);
+  }
+
   useEffect(() => {
-    async function getPhotos() {
-      const key = '563492ad6f91700001000001043e088e51e94c4898dad43bd37e16a6';
-      const response = await api.get<Photo>('https://api.pexels.com/v1/search?query=profile&size=medium&per_page=5', {
-        headers: {
-          Authorization: key
-        }
-      });
-      setProfilePhotos(response.data);
-    }
     getPhotos();
   }, []);
 
@@ -52,8 +52,6 @@ const ContactsSidebar: React.FC<ChatProps> = ({ isChatOpen }) => {
       </>
     )
   }
-
-
 
   return (
     <Container>

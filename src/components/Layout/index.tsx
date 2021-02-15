@@ -19,8 +19,8 @@ const Layout: React.FC = () => {
   return(
     <Container>
       <Sidebar />
-      <ContactsSidebar isChatOpen={isChatOpen} />
-      <MobileContactsSidebar></MobileContactsSidebar>
+      <ContactsSidebar />
+      <MobileContactsSidebar />
 
       <Main isChatOpen={isChatOpen} />
     </Container>

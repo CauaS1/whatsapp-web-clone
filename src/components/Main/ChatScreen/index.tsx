@@ -72,8 +72,24 @@ const ChatScreen: React.FC = () => {
       </Header>
 
       <Content>
-        <img src={Texting} alt="Texting" />
-        <h2>Send your first message</h2>
+        {!messages ? (
+          <div className="first-message-screen">
+            <img src={Texting} alt="Texting" />
+            <h2>Send your first message</h2>
+          </div>
+        ) : (
+            <div className="messages-container">
+              <div className="message">
+                <h2>CauaS1</h2>
+                <p>Hello Rafaela</p>
+              </div>
+
+              <div className="message">
+                <h2>CauaS1</h2>
+                <p>Hello World sdadsad asdfsdfsf dsdas dsa dadadadfsdggf g g fg</p>
+              </div>
+            </div>
+          )}
 
       </Content>
 

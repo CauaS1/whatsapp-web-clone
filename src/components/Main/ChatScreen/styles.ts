@@ -47,20 +47,67 @@ export const Header = styled.header`
 `;
 
 export const Content = styled.div`
+  width: 100%;
+  height: 100%;
   display: grid;
   place-items: center;
 
   padding: 20px;
   background: #fff;
 
-  > img {
-    width: 75%;
-    height: 75%;
+  > .first-message-screen {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: 65%;
+      height: 65%;
+      margin-bottom: 20px;
+    }
+
+    > h2 {
+      color: #cacace;
+    }
   }
 
-  > h2 {
-    color: #cacace;
-  } 
+  > .messages-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .message {
+      width: 200px;
+      min-height: 50px;
+      padding: 6px 10px;
+      margin: 5px 0;
+
+      border-radius: 5px;
+      background: #f1f1f5;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    @media (min-width: 1000px) {
+      .message {
+        width: 350px;
+      }
+    }
+  }
 `;
 
 export const InputContainer = styled.div`

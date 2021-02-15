@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, SearchInput, Wrapper } from './styles';
 
+import firebase from 'firebase';
 import api from '../../services/api';
 
 interface Src {
